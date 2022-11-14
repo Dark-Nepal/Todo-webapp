@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+<div class="container mb-4  text-center">
+    <h1 class=" text-primary">
+       <span class="fw-bold fs-1 text-secondary text-center">
+        Hi 
+        <br>Deepesh!
+       </span> <br> you have <span class="text-danger">0 new task</span> Today
+    </h1>
+</div>
+
+
+
+<div class=" text-center container">
+    
+  <div class="mt-2">
+     
+    <a href="{% url 'addtask' %}" class="mt-4 btn btn-primary">Add-Task</a>
+  </div>
+  
+</div>
+
+
+
+{% endblock %}
